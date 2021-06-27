@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zhou Zuoren</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <style>
+        .test {
+            outline: 1px solid red;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-template-rows: 700px 700px 700px 700px 700px 700px 700px 757px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .col-1.row-1 {
+            background-image: url(images/background1.png);
+            grid-column: 1/5;
+            grid-row: 1/3;
+        }
+
+        .col-1.row-3 {
+            background-image: url(images/background2.png);
+            grid-column: 1/5;
+            grid-row: 3/7;
+        }
+
+        .col-1.row-7 {
+            background-image: url(images/background3.png);
+            grid-column: 1/5;
+            grid-row: 7/9;
+        }
+
+        .photo-1 {
+            background-image: url(images/photo1.png);
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+        .photo-2 {
+            background-image: url(images/photo2.png);
+            grid-column: 2/5;
+            grid-row: 3/6;
+        }
+
+        .photo-3 {
+            background-image: url(images/photo3.png);
+            grid-column: 1/4;
+            grid-row: 8/9;
+        }
+
+        .book {
+            background-image: url(images/book.png);
+            grid-column: 3/5;
+            grid-row: 6/8;
+        }
+
+        .box-1 {
+            background-image: url(images/box_02.png);
+            grid-column: 1/3;
+            grid-row: 2/3;
+            margin-top: -20px;
+            opacity: 85%;
+        }
+
+        .box-2 {
+            background-image: url(images/box_05.png);
+            grid-column: 1/3;
+            grid-row: 4/6;
+            margin-top: 10px;
+            opacity: 75%;
+        }
+
+        .box-3 {
+            background-image: url(images/box_07.png);
+            grid-column: 1/3;
+            grid-row: 6/7;
+        }
+
+        .box-4 {
+            background-image: url(images/box_10.png);
+            grid-column: 3/5;
+            grid-row: 8/9;
+
+        }
+
+        .zhou {
+            position: absolute;
+            grid-column: 3/5;
+            top: 200px;
+            left: 30px;
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 50pt;
+            font-weight: 600;
+        }
+
+        .zhou-chinese {
+            position: absolute;
+            grid-column: 3/5;
+            top: 290px;
+            left: 30px;
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 35pt;
+            font-weight: 500;
+        }
+
+        .time-point {
+            background-image: url(images/point_02.png);
+            grid-column: 3/4;
+            grid-row: 1/3;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .timeline {
+            font-family: 'Noto Sans SC', sans-serif;
+            grid-column: 3/5;
+            grid-row: 1/3;
+            margin-left: 80px;
+            font-size: 20px;
+        }
+
+        .time1 {
+            margin-top: 386px;
+        }
+
+        .time2 {
+            margin-top: 467px;
+        }
+
+        .time3 {
+            margin-top: 554px;
+        }
+
+        .time4 {
+            margin-top: 644px;
+        }
+
+        .p1 {
+            width: 500px;
+            left: 100px;
+            top: 340px;
+            position: absolute;
+            grid-column: 1/4;
+            grid-row: 2/4;
+            letter-spacing: 0.1px;
+        }
+
+        .title-1 {
+            position: absolute;
+            grid-column: 1/3;
+            grid-row: 2/3;
+            top: 205px;
+            left: 100px;
+        }
+
+        .p2 {
+            position: absolute;
+            grid-column: 1/4;
+            grid-row: 5/7;
+            top: 180px;
+            left: 100px;
+            width: 500px;
+        }
+
+        .title-2 {
+            left: 100px;
+            top: 90px;
+            position: absolute;
+            grid-column: 1/3;
+            grid-row: 5/6;
+        }
+
+        .p3 {
+            position: absolute;
+            left: 100px;
+            width: 550px;
+            top: 550px;
+            grid-column: 1/3;
+            grid-row: 6/8;
+        }
+
+        .title-3 {
+            position: absolute;
+            left: 98px;
+            top: 455px;
+            grid-column: 1/3;
+            grid-row: 6/7;
+        }
+
+        .p4 {
+            position: absolute;
+            grid-column: 3/5;
+            grid-row: 8/9;
+            left: 80px;
+            width: 430px;
+            top: 232px;
+            letter-spacing: 0.3px;
+        }
+
+        .title-4 {
+            position: absolute;
+            grid-column: 3/5;
+            grid-row: 8/9;
+            left: 294px;
+            width: 430px;
+            top: 150px;
+        }
+
+        .paragraph {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .inner-p {
+            margin-bottom: 30px;
+            font-weight: 200;
+        }
+
+
+        h3 {
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: white;
+        }
+
+        .chinese {
+            writing-mode: vertical-rl;
+            position: absolute;
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 15pt;
+        }
+
+        .english {
+            writing-mode: vertical-rl;
+            position: absolute;
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 13pt;
+            display: none;
+        }
+
+        .chinese-11 {
+            grid-column: 2/3;
+            grid-row: 4/5;
+            margin-top: 40px;
+            color: #464646;
+            margin-left: 20px;
+        }
+
+        .english-11 {
+            grid-column: 1/3;
+            grid-row: 4/5;
+            margin-top: 40px;
+            color: #929c75;
+            margin-left: 160px;
+        }
+
+        .chinese-12 {
+            grid-column: 2/3;
+            grid-row: 4/5;
+            color: #464646;
+            margin-top: 340px;
+            margin-left: -20px;
+        }
+
+        .english-12 {
+            grid-column: 1/3;
+            grid-row: 4/5;
+            margin-top: 140px;
+            color: #929c75;
+            margin-left: 110px;
+        }
+
+
+
+
+
+
+        /*interaction*/
+        a:link {
+            color: #535353;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #535353;
+        }
+
+        a.time1:hover {
+            color: #b1c9c8;
+        }
+
+        a.time2:hover {
+            color: #c4d3ad;
+        }
+
+        a.time3:hover {
+            color: #d39d9c
+        }
+
+        a.time4:hover {
+            color: #ae524e;
+        }
+
+        span.chinese:hover {
+            color: #929c75;
+        }
+
+        span.chinese:hover+div.english {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="background col-1 row-1"></div>
+        <div class="background col-1 row-3"></div>
+        <div class="background col-1 row-7"></div>
+        <div class="image photo-1"></div>
+        <div class="image photo-2"></div>
+        <div class="image photo-3"></div>
+        <div class="image book"></div>
+
+        <div class="box-1"></div>
+        <div class="box-2 "></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="time-point"></div>
+
+        <h1 class="zhou">
+            Zhou Zuoren
+        </h1>
+        <h2 class="zhou-chinese">周作人</h2>
+
+
+        <a class="timeline time1" href="#title-1">
+            Nascent Chinese Literary Movement
+        </a>
+        <a class="timeline time2" href="#title-2">
+            Shino-Japan War
+        </a>
+
+        <a class="timeline time3" href="#title-3">
+            Translation work
+        </a>
+
+        <a class="timeline time4" href="#title-4">
+            Later in Life
+        </a>
+
+
+        <h3 class="title title-1" id="title-1">Nascent Chinese<br>Literary Movement</h3>
+
+        <div class="paragraph p1">
+            <div class="inner-p">
+                Zhou Zuoren, who was the younger brother of the renowned writer Zhou Shuren (literary name Lu Xun), received a classical education. In 1906 the two brothers went to Japan, where Zhou Zuoren studied Japanese language and literature, Classical Greek literature, and English literature.<br>
+            </div>
+            <div class="inner-p">
+                Writing essays in vernacular Chinese for the influential magazine La Jeunesse, Zhou was a key figure in the May Fourth Movement. He was an advocate of literary reform. In a 1918 article, he called for a "humanist literature" in which "any custom or rule that goes against human instincts and nature should be rejected or rectified". Unlike his brother who write with deep emotion and sharp words, his writing style is soft and close to the everydaylife. A lot of his essay also shows his studies in easter and western culture. His short essays, with their refreshing style, won him many readers up to the present day.
+            </div>
+        </div>
+        <h3 class="title title-2" id="title-2">Shino-Japan War</h3>
+        <div class="paragraph p2">
+            <div class="inner-p">
+                During the Shino-Japan war, while most of the professor of Peiking University left Beijing, the principle of Peiking University Jiang Mengling in his memoris wrote that ask Zhou to stay in Beijing. Because of Zhou’s unique relationship with Japanese, he entrusted Zhou to take care of the University. During the eight years of Japanese occupation, the University buildings were not damaged, and even occured more equiptment. <br>
+            </div>
+            <div class="inner-p">
+                In the begining of Japanese occupation, Zhou published a aticle on the newpaper that criticized the invasion of Japan. After he published the article, was assassinated by a mysterious student. Both Japanese and Nationalist party refuse to acknowlege the criminal. After the assassination, Japanese army sent soldier to Zhou’s household, which increased people’s doubt about Zhou’s loyalty to country and relationship with Japan.
+            </div>
+        </div>
+        <h3 class="title title-3" id="title-3">Translantion Works</h3>
+        <div class="paragraph p3">
+            <div class="inner-p">
+                Most of his translations are pioneering, which include a collection of Greek mimes, Sappho's lyrics, Euripides' tragedies, Kojiki, Shikitei Sanba's Ukiyoburo, Sei Shōnagon's Makura no Sōshi and a collection of Kyogen. He considered his translation of Lucian's Dialogues, which he finished late in his life, as his greatest literary achievement. He was also the first one to translate (from English) the story Ali Baba into Chinese (known as Xianü Nu 侠女奴). After the war Zhou focused on translation Ancient Greek literature and classical Japanese literature, one of his representative work was The Pillow Book(枕草子), an ancient Japanese non-fiction that depict the life of andcient Japanese inner court life. Zhou's version was praised for caputring the core of Japanese language.
+            </div>
+        </div>
+        <h3 class="title title-4" id="title-4">Later In Life</h3>
+        <div class="paragraph p4 inner-p">
+            Because he remained in Beijing during the Sino-Japanese War (1937–45) and worked for a Japanese-sponsored bureau of education, Zhou was tried as a collaborator by the National Government after the war ended and was condemned to death. He received a full pardon in 1949, which permitted him to continue his research. After the communist takeover that same year, he returned to Beijing, where he continued to write and translate. In 1966, the Cultural Revolution started and Zhou became one of the target of percecution. He died in May 1967 because of illness.
+        </div>
+
+
+        <span class="chinese chinese-11">我已明知我过去的蔷薇色的梦都是虚幻,</span>
+        <div class="english english-11">I know my past rose-colored dreams were illusions,</div>
+        <span class="chinese chinese-12">但我还在寻求...这是生人的弱点</span>
+        <div class="english english-12">but I am still chasing it...this is the weakenss of the living men.</div>
+
+    </div>
+</body></html>
